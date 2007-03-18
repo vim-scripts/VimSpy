@@ -1,0 +1,42 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1831
+
+VimSpy defines a few commands and key mappings which enables you browse through almost all Vim internal entities such as functions, commands, menus and key mappings. 
+
+Main commands: 
+
+Function [funcName]
+Command [cmdName]
+Autocmd [autocmd]
+Menu [menuName]
+Map [mapping]
+Syntax [synItem]
+Highlight [synItem]
+
+These commands are simply analogues of well-known Vim informational commands as function, command, autocmd and so on.
+But they are modified in such a way that enables you use it much more efficient.
+
+1. An output of command is displayed in new window rather than ugly console.
+2. It is nicely highlighted.
+3. All function names and other keywords in output are clickable. When you double-click function name, new window with function definition is opened. In this function definition you may click any other function name and one more definition will be opened.  If you double-click Vim built-in keyword, help window will be opened. You also may to put cursor on keyword you are interested for and press enter. It will have the same effect as double-click.
+
+ So you can in such a way quickly browse Vim internals. 
+
+VimSpy also has such commands:
+
+Changes -- :change command analogue
+Messages -- :message command analogue
+
+CommandOutput  [cmd [args]] -- display output of any command in new window (It will not be highlighted though, except all command that have uppercase analogues)
+
+AMap        AMenu         ANoreMap   ANoreMenu
+CMap        CMenu         CNoreMap  CNoreMenu
+IMap          IMenu          INoreMap    INoreMenu
+NMap         NMenu        NNoreMap   NNoreMenu
+NoreMap    NoreMenu    OMap          OMenu
+ONoreMap ONoreMenu  SMap          SMenu
+SNoreMap  SNoreMenu  VMap          VMenu
+VNoreMap  VNoreMenu  XMap          XMenu
+XNoreMap  XNoreMenu  LMap         LNoreMap    --      analogues of lowercase functions
+
+
+
