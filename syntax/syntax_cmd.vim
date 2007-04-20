@@ -8,7 +8,7 @@ elseif exists("b:current_syntax")
 endif
 call ApplyHi(b:hi)
 syn match syntaxTitle '--- Syntax items ---'
-syn match syntaxAttr  '\<match\>\|\<links to\>\|\<cleared\>\|\<contains\>\|\<oneline\>\|\<fold\>\|\<display\>\|\<extend\>\|\<contained\>\|\<containedin\>\|\<nextgroup\>\|\<transparent\>\|\<skipwhite\>\|\<skipnl\>\|\<skipempty\>'
+syn match syntaxAttr  '\<\(match\|links to\|cleared\|contains\|start\|end\|keepend\|oneline\|fold\|display\|extend\|contained\|containedin\|nextgroup\|transparent\|skip\|skipwhite\|skipnl\|skipempty\|cluster\|matchgroup\)\>'
 "syn keyword syntaxAttr contains oneline fold display extend containedin nextgroup 
 " Define the default highlighting
 " For version 5.x and earlier, only when not done already.
